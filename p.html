@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="p.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="m-container">
+      <div class="first-row">
+        <i class="fa fa-bars fa-lg menu-btn"></i>
+        <div class="logo"><img src="imgs/logo.jpg" alt=""></div>
+        <div class="cart"><img src="imgs/cart.jpg" alt=""></div>
+      </div>
+      <div class="second-row">
+        <div class="search-bar">
+          <input type="text" placeholder="Search Products">
+          <button><i class="fa fa-search"></i></button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="menu">
+    <div class="menu-header">
+      <i class="fa-solid fa-xmark  close"></i>
+    </div>
+    <ul class="menu-list">
+      <li>Home</li>
+
+      <li class="has-submenu">
+        <span>Shop</span>
+        <i class="fa fa-angle-down toggle-submenu"></i>
+      </li>
+      <ul class="submenu">
+        <li>Mobiles</li>
+        <li>Tablets</li>
+        <li>Accessories</li>
+        <li>Gaming</li>
+        <li>Smart Home</li>
+      </ul>
+
+      <li>Deals</li>
+      <li>Profile</li>
+      <li>Support</li>
+      <li>Track Your Orders<i class="fa-solid fa-arrow-up-right-from-square"></i></i></li>
+    </ul>
+  </div>
+
+  <div class="top-container">
+    <div>
+      <img src="imgs/1.jpg" alt="" class="main-image">
+    </div>
+    <div>
+      <img src="imgs/photo_2.jpg" alt="" class="side-image">
+    </div>
+  </div>
+
+  <nav class="category-band">
+    <ul>
+      <li><a href="#">Mobile</a></li>
+      <li><a href="#">Tablets</a></li>
+      <li><a href="#">TV & Audio</a></li>
+      <li><a href="#">Home Appliances</a></li>
+      <li><a href="#">Gaming Monitors</a></li>
+      <li><a href="#">Accessories</a></li>
+      <li><a href="#">Deals</a></li>
+    </ul>
+  </nav>
+
+  <h2>Recently veiwed</h2>
+
+  <div class="product-row1">
+    <div class="product-card">
+      <div class="wishlist-icon">
+        <i class="fa-regular fa-heart"></i>
+      </div>
+      <div class="product-image">
+        <img src="imgs/QN.webp" alt="">
+      </div>
+      <div class="product-title">77" Class OLED S95D</div>
+      <div class="product-price">$2,999.99
+        <span class="original-price">$4,599.99</span>
+        <span class="save-amount">Save $1,600</span>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="wishlist-icon">
+        <i class="fa-regular fa-heart"></i>
+      </div>
+      <div class="product-image">
+        <img src="imgs/Tab.webp" alt="">
+      </div>
+      <div class="product-title">Galaxy Tab S10 Ultra</div>
+      <div class="product-price">$979.99
+        <span class="original-price">$1,199.99</span>
+        <span class="save-amount">Save $220</span>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="wishlist-icon">
+        <i class="fa-regular fa-heart"></i>
+      </div>
+      <div class="product-image">
+        <img src="imgs/SCOM.jpg" alt="">
+      </div>
+      <div class="product-title">Galaxy Buds3 Pro</div>
+      <div class="product-price">$189.99
+        <span class="original-price">$249.99</span>
+        <span class="save-amount">Save $60.00</span>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="wishlist-icon">
+        <i class="fa-regular fa-heart"></i>
+      </div>
+      <div class="product-image">
+        <img src="imgs/Titanium.webp" alt="">
+      </div>
+      <div class="product-title">Galaxy S24 FE</div>
+      <div class="product-price">$549.99
+        <span class="original-price">$649.99</span>
+        <span class="save-amount">Save $100</span>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="wishlist-icon">
+        <i class="fa-regular fa-heart"></i>
+      </div>
+      <div class="product-image">
+        <img src="imgs/us.avif" alt="">
+      </div>
+      <div class="product-title">Ultimate Bundle USB-C</div>
+      <div class="product-price">$69.99
+        <span class="original-price"></span>
+        <span class="save-amount"></span>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="wishlist-icon">
+        <i class="fa-regular fa-heart"></i>
+      </div>
+      <div class="product-image">
+        <img src="imgs/Mint.webp" alt="">
+      </div>
+      <div class="product-title">Galaxy S25+</div>
+      <div class="product-price">$1,119.99
+        <span class="original-price">$1,319.99</span>
+        <span class="save-amount">Save $200</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-nav">
+    <div class="scroll-track">
+      <div class="scroll-thumb"></div>
+    </div>
+    <div class="scroll-buttons">
+      <button class="nav-btn" onclick="moveScroll(-1)"><i class="fa-solid fa-arrow-left"></i></button>
+      <button class="nav-btn" onclick="moveScroll(1)"><i class="fa-solid fa-arrow-right"></i></button>
+    </div>
+  </div>
+
+  <h2>Recommended for you</h2>
+
+  <div class="product-row">
+    <div class="product-card">
+      <div class="wishlist-icon">
+        <i class="fa-regular fa-heart"></i>
+      </div>
+      <div class="product-image">
+        <img src="imgs/airpods.jfif" alt="">
+      </div>
+      <div class="product-title">Air Pods Pro 2</div>
+      <div class="product-price">$209.00
+        <span class="original-price">$249.00</span>
+        <span class="save-amount">Save $40</span>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="wishlist-icon">
+        <i class="fa-regular fa-heart"></i>
+      </div>
+      <div class="product-image">
+        <img src="imgs/z7.avif" alt="">
+      </div>
+      <div class="product-title">Galaxy Z Fold7 512GB</div>
+      <div class="product-price">$1819.99
+        <span class="original-price">$2119.99</span>
+        <span class="save-amount">Save $300</span>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="wishlist-icon">
+        <i class="fa-regular fa-heart"></i>
+      </div>
+      <div class="product-image">
+        <img src="imgs/frame.jfif" alt="">
+      </div>
+      <div class="product-title">75" Class The Frame Pro</div>
+      <div class="product-price">$2,499.99
+        <span class="original-price">$3,199.99</span>
+        <span class="save-amount">Save $700</span>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="wishlist-icon">
+        <i class="fa-regular fa-heart"></i>
+      </div>
+      <div class="product-image">
+        <img src="imgs/RF.webp" alt="">
+      </div>
+      <div class="product-title">Bespoke Smart Refrigerator</div>
+      <div class="product-price">$2,099.00
+        <span class="original-price">$3,399.00</span>
+        <span class="save-amount">Save $1300</span>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="wishlist-icon">
+        <i class="fa-regular fa-heart"></i>
+      </div>
+      <div class="product-image">
+        <img src="imgs/PA.webp" alt="">
+      </div>
+      <div class="product-title">Bespoke AI Laundry</div>
+      <div class="product-price">$1,299.99
+        <span class="original-price">$1,799.99</span>
+        <span class="save-amount">Save $500</span>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="wishlist-icon">
+        <i class="fa-regular fa-heart"></i>
+      </div>
+      <div class="product-image">
+        <img src="imgs/WD.webp" alt="">
+      </div>
+      <div class="product-title">Bespoke AI Laundry</div>
+      <div class="product-price">$1,999.00
+        <span class="original-price">$3,299.00</span>
+        <span class="save-amount">Save $1300</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-nav">
+    <div class="scroll-track">
+      <div class="scroll-thumb"></div>
+    </div>
+    <div class="scroll-buttons">
+      <button class="nav-btn" onclick="moveScroll(-1)"><i class="fa-solid fa-arrow-left"></i></button>
+      <button class="nav-btn" onclick="moveScroll(1)"><i class="fa-solid fa-arrow-right"></i></button>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-left">
+      <img src="imgs/logo.jpg" alt="Logo" />
+      <p>Ready to Buy?</p>
+      <br>
+      <p>follow us</p>
+      <div class="social-icons">
+        <i class="fab fa-youtube"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-twitter"></i>
+      </div>
+    </div>
+
+    <div class="footer-section">
+      <h4>Shop</h4>
+      <a href="#">Mobiles</a>
+      <a href="#">Tablets</a>
+      <a href="#">Accessories</a>
+      <a href="#">Gaming</a>
+      <a href="#">Smart Home</a>
+      <a href="#">Deals</a>
+    </div>
+
+    <div class="footer-section">
+      <h4>Services & Support</h4>
+      <a href="#">Chat with Us</a>
+      <a href="#">Order Help</a>
+      <a href="#">Give Feedback</a>
+      <a href="#">Contact Us</a>
+      <a href="#">Returns</a>
+      <a href="#">Request a Repair</a>
+      <a href="#">Delivery</a>
+      <a href="#">Builders Home Appliances</a>
+    </div>
+    <div class="footer-section">
+      <h4>About Us</h4>
+      <a href="#">Our business</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+      <a href="#">Ethics</a>
+    </div>
+
+    <div class="footer-section">
+      <h4>Partnership</h4>
+      <a href="#">Partner Program</a>
+      <a href="#">Write For Us</a>
+
+      <div class="newsletter">
+        <input type="email" placeholder="Enter your email" />
+        <button>Subscribe</button>
+      </div>
+    </div>
+  </footer>
+
+  <button class="topBtn">↑ Top</button>
+
+  <script src="p.js"></script>
+</body>
+
+</html>
